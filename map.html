@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100%;
+            padding: 10px;
+            margin: 0;
+            background-color: lightblue;
+        }
+        
+        #sidebar {
+            width: 25%;
+            height: 100vh;
+            float: left;
+            border-right: 2px solid;
+        }
+
+        label {
+            font-size: 18px;
+        }
+
+        #map {
+            width: 70%;
+            height: 100vh;
+            margin: 0 auto;
+        }
+
+        #title{
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        #list {
+            padding: 4px;
+            font-size: 14px;
+        }
+
+        li:hover{
+            color: blue;
+        }
+
+        li{
+            list-style-type: none;
+        }
+
+        li img {
+            width: 50px;
+            height: 50px;
+            vertical-align: middle;
+            margin-right: 4px;
+            margin-bottom: 4px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="sidebar">
+        <label>Search For:
+            <input id="search" type="text"/>
+            <button id="button">Search</button>
+        </label>
+        <ul id="list"></ul>
+    </div>
+
+    <div id="map"></div>
+
+    <script src="/jquery-3.1.1.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMJDagXyKXpkWzb0CIAtZQv9gaque61RM"></script>
+    <script src="map.js"></script>
+</body>
+</html>
